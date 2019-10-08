@@ -14,12 +14,13 @@ public class Tvshow {
     private String name;
 
     @NotNull
-    @Size(min=10, max=30)
+    @Size(min=3, max=10)
     private String type;
 
     @NotNull
     @Size(min=10, max=30)
     private String description;
+
 
     public long getId() {
         return id;
@@ -37,19 +38,19 @@ public class Tvshow {
         this.name = name;
     }
 
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
     public String getType() {
         return type;
     }
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 }
